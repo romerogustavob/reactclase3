@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Item from '../Item/Item'
 
-const ItemList = () => {
+const ItemList = ({chars}) => {
+
+    
   return (
     <>
         <div>
-            ItemList
+            { chars.map(c=><Item key={c.id} {...c} />) }
         </div>
-        <Item/>
+       
     </>
     
   )
