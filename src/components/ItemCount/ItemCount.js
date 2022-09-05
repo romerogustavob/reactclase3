@@ -12,7 +12,7 @@ const ItemCount = ( {stock, inicio, addOn}) => {
     
     const handleClick=()=>{
       if(parseInt(stock)===counter){
-        alert('stock completo')
+        console.log('stock completo')
         return
        }else{
         addOn({counter})
@@ -22,7 +22,7 @@ const ItemCount = ( {stock, inicio, addOn}) => {
     
     const handleClickMinus=()=>{
       if(0===counter){
-        alert('Agregue un producto')
+        console.log('Agregue un producto')
         return
        } else{
         addOn({counter})

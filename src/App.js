@@ -7,7 +7,7 @@ import ItemCount from './components/ItemCount/ItemCount';
 
 function App() {
   const addOnb = ({valor}) => {
-    alert('el valor actual es '+parseInt({valor}))
+    console.log('el valor actual es '+parseInt({valor}))
   }
   return (
     <>
